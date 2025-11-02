@@ -1,27 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour {
+public class Enemy : MonoBehaviour
+{
+    public int health = 100;
+    public GameObject deathEffect;
+    public bool isAlive = true;
 
-	public int health = 100;
+    public void TakeDamage(int damage)
+    {
+        if (isAlive = false) return;
 
-	public GameObject deathEffect;
+        health -= damage;
 
-	public void TakeDamage (int damage)
-	{
-		health -= damage;
+        if (health <= 0)
+        {
+            isAlive = false;
+            if (deathEffect != null)
+            {
+                Instantiate(deathEffect, transform.position, Quaternion.identity);
+            }
+        }
+        else
+        {
+            isAlive = true;
+        }
+    }
 
-		if (health <= 0)
-		{
-			Die();
-		}
-	}
-
-	void Die ()
-	{
-		Instantiate(deathEffect, transform.position, Quaternion.identity);
-		Destroy(gameObject);
-	}
-
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
 }

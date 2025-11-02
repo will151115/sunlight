@@ -10,19 +10,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private Animator anim; // 👈 Add this
+    [SerializeField] private Animator anim; 
 
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        // ✅ Walking animation logic
+        
         anim.SetBool("isWalking", horizontal != 0f);
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            anim.SetTrigger("jump"); // 👈 Optional, if you have a jump anim
+            anim.SetTrigger("jump"); 
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
