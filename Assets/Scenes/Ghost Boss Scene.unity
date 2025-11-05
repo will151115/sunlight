@@ -24453,6 +24453,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!212 &1688673510 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3766586271768953309, guid: 31c0c5f80c9766b4fa5a37b74e59e4b3, type: 3}
+  m_PrefabInstance: {fileID: 6828750034326197640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1688673512 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2199379952593456095, guid: 31c0c5f80c9766b4fa5a37b74e59e4b3, type: 3}
+  m_PrefabInstance: {fileID: 6828750034326197640}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a06452ee187f8a498c13a18d1770279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1695290977
 GameObject:
   m_ObjectHideFlags: 0
@@ -25018,6 +25034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2199379952593456095, guid: 31c0c5f80c9766b4fa5a37b74e59e4b3, type: 3}
+      propertyPath: playerSprite
+      value: 
+      objectReference: {fileID: 1688673510}
     - target: {fileID: 2500287676923338614, guid: 31c0c5f80c9766b4fa5a37b74e59e4b3, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -25026,6 +25046,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 285853394}
+    - target: {fileID: 6133081197366411669, guid: 31c0c5f80c9766b4fa5a37b74e59e4b3, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1688673512}
     - target: {fileID: 6261197781009640085, guid: 31c0c5f80c9766b4fa5a37b74e59e4b3, type: 3}
       propertyPath: fireDelay
       value: 0.5

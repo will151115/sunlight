@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,19 +12,27 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private Animator anim; 
+    [SerializeField] private Animator anim;
+    [SerializeField] private SpriteRenderer playerSprite;
+
+
+    private bool isGhost;
+
+    public bool playerCanTakeDamage = true;
+
+    [SerializeField] private float ghostDuration = 3f;
 
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        
+
         anim.SetBool("isWalking", horizontal != 0f);
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            anim.SetTrigger("jump"); 
+            anim.SetTrigger("jump");
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
@@ -31,6 +41,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Flip();
+
+        if (Input.GetKeyDown(KeyCode.G) && !isGhost)
+        {
+            StartCoroutine(GhostMode());
+        }
     }
 
     private void FixedUpdate()
@@ -51,5 +66,19 @@ public class PlayerMovement : MonoBehaviour
 
             transform.Rotate(0f, 180f, 0f);
         }
+    }
+
+    private IEnumerator GhostMode()
+    {
+        isGhost = true;
+        playerSprite.color = new Color(1f, 1f, 1f, 0.5f);
+
+        playerCanTakeDamage = false;
+
+        yield return new WaitForSeconds(ghostDuration);
+
+        playerCanTakeDamage = true;
+        playerSprite.color = new Color(1f, 1f, 1f, 1f);
+        isGhost = false;
     }
 }

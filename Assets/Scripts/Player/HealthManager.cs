@@ -7,7 +7,9 @@ public class HealthManager : MonoBehaviour
     public Image healthBar;            // assign in inspector if you can
     public float healthAmount = 100f;
     public float maxHealth = 100f;
-    public GameObject player;          // assign or tag the player "Player"
+    public GameObject player;    
+    [SerializeField] private PlayerMovement playerMovement;
+      // assign or tag the player "Player"
 
     private void Start()
     {
@@ -70,9 +72,13 @@ public class HealthManager : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        healthAmount -= damage;
-        healthAmount = Mathf.Clamp(healthAmount, 0f, maxHealth);
-        UpdateHealthUI();
+        if(playerMovement.playerCanTakeDamage)
+        {
+            healthAmount -= damage;
+            healthAmount = Mathf.Clamp(healthAmount, 0f, maxHealth);
+            UpdateHealthUI();
+        }
+        
     }
 
     public void Heal(float amount)
