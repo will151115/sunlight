@@ -18,7 +18,7 @@ public class PrefabWeapon : MonoBehaviour
     private bool canMelee = true;
 
     private int timesClicked;
-    private float lastTapTime = 0f;
+
     public float doubleTapTime = 0.4f;
 
     void Update()

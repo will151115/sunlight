@@ -26,9 +26,6 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-
-        anim.SetBool("isWalking", horizontal != 0f);
-
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
@@ -46,11 +43,26 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(GhostMode());
         }
+
+        if (Mathf.Abs(horizontal) > 0.1f)
+        {
+            Debug.Log($"Vel: {rb.velocity}, Simulated: {rb.simulated}");
+        }
+
     }
 
     private void FixedUpdate()
     {
+        /*
+        if (rb.velocity.x == 0 && horizontal != 0)
+        {
+            Debug.Log("Velocity was forced to zero at time " + Time.time);
+            Debug.Log("Stack trace: " + System.Environment.StackTrace);
+        }
+        */
+
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        
     }
 
     private bool IsGrounded()
@@ -63,10 +75,12 @@ public class PlayerMovement : MonoBehaviour
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
             isFacingRight = !isFacingRight;
-
-            transform.Rotate(0f, 180f, 0f);
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
         }
     }
+
 
     private IEnumerator GhostMode()
     {
@@ -81,4 +95,10 @@ public class PlayerMovement : MonoBehaviour
         playerSprite.color = new Color(1f, 1f, 1f, 1f);
         isGhost = false;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Collided with: " + collision.collider.name);
+    }
+
 }

@@ -122,17 +122,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 546971519723981988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a06452ee187f8a498c13a18d1770279, type: 3}
+  m_Script: {fileID: 11500000, guid: cee63d94e6aedb14b89f0e6ee4a8eca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
   jumpingPower: 16
-  rb: {fileID: 8359408545414112640}
-  groundCheck: {fileID: 6343144973955138227}
+  rb: {fileID: 0}
+  groundCheck: {fileID: 0}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
-  anim: {fileID: 3864299411747154783}
+    m_Bits: 0
+  anim: {fileID: 0}
+  playerSprite: {fileID: 0}
+  playerCanTakeDamage: 1
+  ghostDuration: 3
 --- !u!114 &6261197781009640085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +154,7 @@ MonoBehaviour:
   meleeTrigger: {fileID: 2500287676923338614}
   fireDelay: 0.25
   meleeCooldown: 1
+  doubleTapTime: 0.4
 --- !u!114 &6133081197366411669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +171,7 @@ MonoBehaviour:
   healthAmount: 100
   maxHealth: 100
   player: {fileID: 546971519723981988}
+  playerMovement: {fileID: 0}
 --- !u!212 &3766586271768953309
 SpriteRenderer:
   m_ObjectHideFlags: 0
