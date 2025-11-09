@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Mathf.Abs(horizontal) > 0.1f)
         {
-            Debug.Log($"Vel: {rb.velocity}, Simulated: {rb.simulated}");
+            //Debug.Log($"Vel: {rb.velocity}, Simulated: {rb.simulated}");
         }
 
     }
@@ -98,7 +98,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collided with: " + collision.collider.name);
+        //Debug.Log("Collided with: " + collision.collider.name);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("HazardCheckpoint"))
+        {
+
+        }
     }
 
 }

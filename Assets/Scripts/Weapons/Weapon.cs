@@ -21,6 +21,8 @@ public class PrefabWeapon : MonoBehaviour
 
     public float doubleTapTime = 0.4f;
 
+    public float meleeAnimTime = 0.5f;
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -55,8 +57,8 @@ public class PrefabWeapon : MonoBehaviour
         canMelee = false;
 
         meleeTrigger.SetActive(true);
-        
-
+        anim.SetTrigger("melee");
+        yield return new WaitForSeconds(meleeAnimTime);
         meleeTrigger.SetActive(false);
 
         yield return new WaitForSeconds(meleeCooldown);
