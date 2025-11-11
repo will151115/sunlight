@@ -1,17 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HazardCheckpoints : MonoBehaviour
 {
-    public GameObject player;
-    public Transform currentCheckpoint;
+    // Static means it’s shared — every hazard can access it
+    public static Transform currentCheckpoint;
 
-    public void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            currentCheckpoint.transform.position = gameObject.transform.position;
+            // Set this checkpoint as the current one
+            currentCheckpoint = transform;
+            Debug.Log("Checkpoint set to: " + gameObject.name);
         }
     }
 }

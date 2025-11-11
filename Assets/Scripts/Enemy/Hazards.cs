@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Hazards : MonoBehaviour
@@ -7,9 +5,6 @@ public class Hazards : MonoBehaviour
     [Header("Damage Settings")]
     public float damageAmount = 5f;
     public float damageCooldown = 1f;
-
-    public HazardCheckpoints hazardCheckpoints;
-    public GameObject player;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,7 +14,16 @@ public class Hazards : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.healthAmount -= damageAmount;
-                player.transform.position = HazardCheckpoints.currentCheckpoint.transform.position;
+
+                if (HazardCheckpoints.currentCheckpoint != null)
+                {
+                    // Move the player back to the last checkpoint
+                    other.transform.position = HazardCheckpoints.currentCheckpoint.position;
+                }
+                else
+                {
+                    Debug.LogWarning("No checkpoint set yet!");
+                }
             }
         }
     }
