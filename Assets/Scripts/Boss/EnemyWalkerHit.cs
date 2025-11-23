@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BossAttackHitbox : MonoBehaviour
+public class EnemyWalkerHit : MonoBehaviour
 {
     [Header("Damage Settings")]
     public float damageAmount = 5f;
@@ -8,7 +8,7 @@ public class BossAttackHitbox : MonoBehaviour
 
     private float nextDamageTime = 0f;
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerCollision2D(Collider2D other)
     {
         if (other.CompareTag("Player") && Time.time >= nextDamageTime)
         {
@@ -16,7 +16,6 @@ public class BossAttackHitbox : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.healthAmount -= damageAmount;
-                nextDamageTime = Time.time + damageCooldown;
             }
         }
     }
