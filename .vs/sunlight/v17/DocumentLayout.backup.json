@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|c:\\users\\cody ninja\\documents\\github\\sunlight\\assets\\scripts\\enemy\\enemywalker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemywalker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|c:\\users\\cody ninja\\documents\\github\\sunlight\\assets\\scripts\\enemy\\hazards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\hazards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|c:\\users\\cody ninja\\documents\\github\\sunlight\\assets\\scripts\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\assets\\scripts\\enemy\\hazardcheckpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\hazardcheckpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|c:\\users\\cody ninja\\documents\\github\\sunlight\\assets\\scripts\\boss\\bossattackhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\assets\\scripts\\boss\\bossattackhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss\\bossattackhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\assets\\scripts\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3BB3C0-EAFF-5325-7740-052D7F2DFD9F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +34,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyWalker.cs",
+              "DocumentMoniker": "C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\Assets\\Scripts\\Enemy\\EnemyWalker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyWalker.cs",
+              "ToolTip": "C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\Assets\\Scripts\\Enemy\\EnemyWalker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyWalker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T10:38:30.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HazardCheckpoints.cs",
+              "DocumentMoniker": "C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\Assets\\Scripts\\Enemy\\HazardCheckpoints.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\HazardCheckpoints.cs",
+              "ToolTip": "C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\Assets\\Scripts\\Enemy\\HazardCheckpoints.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\HazardCheckpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T11:17:58.68Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -36,10 +69,9 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Boss\\BossAttackHitbox.cs",
               "ToolTip": "C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\Assets\\Scripts\\Boss\\BossAttackHitbox.cs",
               "RelativeToolTip": "Assets\\Scripts\\Boss\\BossAttackHitbox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T10:48:33.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T10:48:33.72Z"
             },
             {
               "$type": "Document",
@@ -49,14 +81,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Hazards.cs",
               "ToolTip": "C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\Assets\\Scripts\\Enemy\\Hazards.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\Hazards.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T10:48:01.212Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Weapon.cs",
               "DocumentMoniker": "C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\Assets\\Scripts\\Weapons\\Weapon.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\Weapon.cs",
@@ -64,12 +96,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Weapons\\Weapon.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T10:41:54.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T10:41:54.345Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\Cody Ninja\\Documents\\GitHub\\sunlight\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
@@ -77,8 +108,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
               "ViewState": "AgIAAFgAAAAAAAAAAAAcwGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T10:38:49.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T10:38:49.295Z"
             }
           ]
         }
