@@ -46,23 +46,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (Mathf.Abs(horizontal) > 0.1f)
         {
-            //Debug.Log($"Vel: {rb.velocity}, Simulated: {rb.simulated}");
+            
         }
 
     }
 
     private void FixedUpdate()
     {
-        /*
-        if (rb.velocity.x == 0 && horizontal != 0)
-        {
-            Debug.Log("Velocity was forced to zero at time " + Time.time);
-            Debug.Log("Stack trace: " + System.Environment.StackTrace);
-        }
-        */
-
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-        
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);      
     }
 
     private bool IsGrounded()
@@ -108,5 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
         }
     }
+
+
 
 }
