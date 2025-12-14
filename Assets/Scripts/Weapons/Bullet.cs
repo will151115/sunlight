@@ -8,31 +8,33 @@ public class Bullet : MonoBehaviour {
 	public int damage = 1;
 	public Rigidbody2D rb;
 	public GameObject impactEffect;
+    public Button button;
 
-	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
 		rb.velocity = transform.right * speed;
 	}
 
 	void OnTriggerEnter2D(Collider2D hitInfo)
-{
-    Enemy enemy = hitInfo.GetComponent<Enemy>();
-    if (enemy != null)
     {
-        enemy.TakeDamage(damage);
-    }
+        Enemy enemy = hitInfo.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
 
-    if (impactEffect != null)
-    {
+        if (impactEffect != null)
+        {
         
-        GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation);
+            GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation);
 
         
-    }
+        }
 
-    // Destroy the bullet itself
+        
+
+    
     Destroy(gameObject);
-}
+    }
 
-	
 }

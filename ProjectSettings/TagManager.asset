@@ -8,6 +8,8 @@ TagManager:
   - BossRange
   - Enemy
   - HazardCheckpoint
+  - MeleeTrigger
+  - Bullet
   layers:
   - Default
   - TransparentFX

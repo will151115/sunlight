@@ -109,6 +109,7 @@
     <Compile Include="Assets\Scripts\Misc\Portal.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon.cs" />
+    <Compile Include="Assets\Scripts\Misc\Button.cs" />
     <Compile Include="Assets\Scripts\Boss\BossAttackHitbox.cs" />
     <Compile Include="Assets\Scripts\Player\Bench.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bullet.cs" />
