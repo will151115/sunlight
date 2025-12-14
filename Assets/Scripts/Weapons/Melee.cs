@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Melee : MonoBehaviour
 {
-
+    public Button button;
     public Enemy enemy;
     // Start is called before the first frame update
     void Start()
@@ -24,5 +24,7 @@ public class Melee : MonoBehaviour
         {
             enemy.TakeDamage(5);
         }
+
+        
     }
 }

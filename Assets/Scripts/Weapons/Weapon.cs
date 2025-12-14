@@ -46,7 +46,6 @@ public class PrefabWeapon : MonoBehaviour
 
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
-        // Small optional delay between shots
         yield return new WaitForSeconds(0.2f);
         canShoot = true;
     }

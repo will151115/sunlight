@@ -87,10 +87,7 @@ public class PlayerMovement : MonoBehaviour
         isGhost = false;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        //Debug.Log("Collided with: " + collision.collider.name);
-    }
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
